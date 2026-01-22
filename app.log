@@ -1,0 +1,14 @@
+[2026-01-21 14:24:48] INFO: === Démarrage de l'application DB Listener ===
+[2026-01-21 14:24:48] INFO: Type de base de données: postgres
+[2026-01-21 14:24:48] INFO: Table surveillée: users
+[2026-01-21 14:24:48] INFO: Modes activés: insert,update,delete
+[2026-01-21 14:24:48] INFO: URL webhook: https://webhook.site/18c9351e-1ef8-494f-b751-2ca7c3c71d49
+[2026-01-21 14:24:48] INFO: Trigger INSERT créé pour la table users
+[2026-01-21 14:24:48] INFO: Trigger UPDATE créé pour la table users
+[2026-01-21 14:24:48] INFO: Trigger DELETE créé pour la table users
+[2026-01-21 14:24:48] INFO: Application démarrée et en écoute...
+[2026-01-21 14:24:48] INFO: Écoute démarrée sur le canal: users_changes
+[2026-01-21 14:32:22] INFO: Notification envoyée avec succès: INSERT sur table users
+[2026-01-21 14:59:49] INFO: Notification envoyée avec succès: INSERT sur table users
+[2026-01-22 06:41:20] INFO: Signal d'arrêt reçu, fermeture de l'application...
+[2026-01-22 06:41:20] INFO: === Application arrêtée ===
