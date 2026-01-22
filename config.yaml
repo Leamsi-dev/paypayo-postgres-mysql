@@ -1,0 +1,28 @@
+database:
+  type: "postgres"  # postgres ou mysql
+  host: "localhost"
+  port: 5432
+  user: "postgres" #votre_user
+  password: "JobboAdminDb"
+  database: "api_sms_bd"
+  table: "users"
+  sslmode: "disable"  # Pour PostgreSQL; "prefer, require" en prod
+
+listener:
+  # Modes: insert, update, delete (plusieurs séparés par des virgules)
+  modes: "insert,update,delete"
+  # Intervalle de polling en secondes (pour MySQL)
+  poll_interval: 2
+
+webhook:
+  url: "https://webhook.site/18c9351e-1ef8-494f-b751-2ca7c3c71d49"
+  timeout: 10  # secondes
+  retry_count: 2
+  retry_delay: 5  # secondes
+
+logging:
+  file: "app.log"
+  level: "info"  # debug, info, warn, error
+
+worker:
+  pool_size: 5  # Nombre de workers pour traiter les notifications, selon la charge du serveur.
