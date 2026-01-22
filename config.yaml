@@ -1,11 +1,11 @@
 database:
   type: "postgres"  # postgres ou mysql
   host: "localhost"
-  port: 5432
-  user: "postgres" #votre_user
-  password: "JobboAdminDb"
-  database: "api_sms_bd"
-  table: "users"
+  port: 5432    # port db
+  user: "votre_user" #votre_user
+  password: "votre_password"
+  database: "votre_db"
+  table: "votre_table"
   sslmode: "disable"  # Pour PostgreSQL; "prefer, require" en prod
 
 listener:
@@ -15,7 +15,7 @@ listener:
   poll_interval: 2
 
 webhook:
-  url: "https://webhook.site/18c9351e-1ef8-494f-b751-2ca7c3c71d49"
+  url: "https://webhook.site/18c9351e-1ef8-494f" #votre_url_notification
   timeout: 10  # secondes
   retry_count: 2
   retry_delay: 5  # secondes
