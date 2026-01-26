@@ -1,6 +1,6 @@
-# Paypayo: DB Listener, application d'écoute d'une table de la base de données en vu de notifier le changement via url.
+# Paypayo: Application d'écoute d'une table de la base de données en vu de notifier le changement via url.
 
-Paypayo: est une application en Go, pour surveiller les changements dans une table d'une base de données (PostgreSQL ou MySQL) et envoyer des notifications via webhook.
+Paypayo: est une application écrite en Go, pour surveiller les changements d'une table dans une base de données (PostgreSQL ou MySQL) et envoyer des notifications via webhook.
 
 ## Fonctionnalités
 
@@ -42,7 +42,7 @@ go mod download
 `config.yaml`
 
 # Compiler
-go build -o app-db-listener cmd/main.go
+go build -o app-paypayo cmd/main.go
 ```
 
 ## Configuration
@@ -83,10 +83,10 @@ worker:
 
 ```bash
 # Démarrer avec la config par défaut
-./app-db-listener
+./app-paypayo
 
 # Démarrer avec un fichier de config spécifique
-./app-db-listener -config=/chemin/vers/config.yaml
+./app-db-paypayo -config=/chemin/vers/config.yaml
 ```
 
 ## Format des Notifications Webhook
