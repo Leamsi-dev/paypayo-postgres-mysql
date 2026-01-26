@@ -67,7 +67,6 @@ func NewPostgresListener(cfg *config.Config, log *logger.Logger, ntf *notifier.N
 func (pl *PostgresListener) setupTriggers() error {
 	channelName := fmt.Sprintf("%s_changes", pl.config.Database.Table)
 
-	// Créer la fonction trigger
 	functionSQL := fmt.Sprintf(`
 		CREATE OR REPLACE FUNCTION notify_%s_changes()
 		RETURNS TRIGGER AS $$
@@ -109,7 +108,6 @@ func (pl *PostgresListener) setupTriggers() error {
 		return fmt.Errorf("erreur création fonction: %w", err)
 	}
 
-	// Supprimer les triggers existants
 	dropTriggerSQL := fmt.Sprintf(`
 		DROP TRIGGER IF EXISTS %s_insert_trigger ON %s;
 		DROP TRIGGER IF EXISTS %s_update_trigger ON %s;
@@ -124,7 +122,6 @@ func (pl *PostgresListener) setupTriggers() error {
 		return fmt.Errorf("erreur suppression triggers: %w", err)
 	}
 
-	// Créer les triggers selon la configuration
 	if pl.config.Listener.IsInsertEnabled() {
 		triggerSQL := fmt.Sprintf(`
 			CREATE TRIGGER %s_insert_trigger
@@ -176,7 +173,6 @@ func (pl *PostgresListener) Listen(ctx context.Context) error {
 
 	pl.logger.Info("Écoute démarrée sur le canal: %s", channelName)
 
-	// Démarrer les workers
 	for i := 0; i < pl.config.Worker.PoolSize; i++ {
 		go pl.worker(ctx, i)
 	}
