@@ -12,3 +12,31 @@
 [2026-01-21 14:59:49] INFO: Notification envoyée avec succès: INSERT sur table users
 [2026-01-22 06:41:20] INFO: Signal d'arrêt reçu, fermeture de l'application...
 [2026-01-22 06:41:20] INFO: === Application arrêtée ===
+[2026-01-22 20:51:10] INFO: === Démarrage de l'application DB Listener ===
+[2026-01-22 20:51:10] INFO: Type de base de données: postgres
+[2026-01-22 20:51:10] INFO: Table surveillée: users
+[2026-01-22 20:51:10] INFO: Modes activés: insert,update,delete
+[2026-01-22 20:51:10] INFO: URL webhook: https://webhook.site/18c9351e-1ef8-494f-b751-2ca7c3c71d49
+[2026-01-22 20:51:10] INFO: Workers: 5
+[2026-01-22 20:51:11] INFO: Trigger INSERT créé pour la table users
+[2026-01-22 20:51:11] INFO: Trigger UPDATE créé pour la table users
+[2026-01-22 20:51:11] INFO: Trigger DELETE créé pour la table users
+[2026-01-22 20:51:11] INFO: Application démarrée et en écoute...
+[2026-01-22 20:51:11] INFO: Écoute démarrée sur le canal: users_changes
+[2026-01-22 21:21:28] INFO: Signal d'arrêt reçu, fermeture de l'application...
+[2026-01-22 21:21:28] INFO: === Application arrêtée ===
+[2026-01-22 21:21:28] INFO: Arrêt de l'écoute
+[2026-01-22 21:21:39] INFO: === Démarrage de l'application DB Listener ===
+[2026-01-22 21:21:39] INFO: Type de base de données: postgres
+[2026-01-22 21:21:39] INFO: Table surveillée: users
+[2026-01-22 21:21:39] INFO: Modes activés: insert,update,delete
+[2026-01-22 21:21:39] INFO: URL webhook: https://webhook.site/18c9351e-1ef8-494f-b751-2ca7c3c71d49
+[2026-01-22 21:21:39] INFO: Workers: 5
+[2026-01-22 21:21:39] INFO: Trigger INSERT créé pour la table users
+[2026-01-22 21:21:39] INFO: Trigger UPDATE créé pour la table users
+[2026-01-22 21:21:39] INFO: Trigger DELETE créé pour la table users
+[2026-01-22 21:21:39] INFO: Application démarrée et en écoute...
+[2026-01-22 21:21:39] INFO: Écoute démarrée sur le canal: users_changes
+[2026-01-22 23:52:10] INFO: Signal d'arrêt reçu, fermeture de l'application...
+[2026-01-22 23:52:10] INFO: === Application arrêtée ===
+[2026-01-22 23:52:10] INFO: Arrêt de l'écoute
