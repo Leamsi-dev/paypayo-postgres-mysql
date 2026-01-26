@@ -110,7 +110,7 @@ func main() {
 	fmt.Println("📡 En attente d'événements...")
 	fmt.Println()
 	fmt.Println("💡 Conseil: Pour exécuter en arrière-plan, utilisez 'nohup' ou 'systemd'")
-	fmt.Println("   Exemple: nohup ./app-db-listener &")
+	fmt.Println("   Exemple: nohup ./paypayo-1.0.0 &")
 	fmt.Println()
 	fmt.Println("⏹️  Pour arrêter: Ctrl+C ou kill -SIGTERM <PID>")
 	fmt.Println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
